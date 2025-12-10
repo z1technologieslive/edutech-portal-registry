@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-12-10T18:30:00.000Z",
+  "description": "Z1LMS Edutech Portal Registry",
+  "portals": {
+    "academic": {
+      "description": "Academic Management Portal - Course management, grades, student records",
+      "version": "2.1.0",
+      "author": "Z1LMS Team",
+      "compatibility": {
+        "node": ">=18.0.0",
+        "nextjs": "^14.0.0",
+        "@shared": "^1.0.0"
+      },
+      "themes": {
+        "default": "z1technologieslive/portal-academic-default",
+        "modern": "z1technologieslive/portal-academic-modern",
+        "compact": "z1technologieslive/portal-academic-compact"
+      },
+      "features": ["course-management", "gradebook", "attendance", "timetable"],
+      "dependencies": ["@shared/components", "dayjs", "react-hook-form"],
+      "shadcnComponents": ["button", "card", "table", "dialog", "form"]
+    },
+    "finance": {
+      "description": "Financial Management Portal - Fee collection, invoices, transactions",
+      "version": "1.2.0",
+      "author": "Z1LMS Team",
+      "compatibility": {
+        "node": ">=18.0.0",
+        "nextjs": "^14.0.0",
+        "@shared": "^1.0.0"
+      },
+      "themes": {
+        "default": "z1technologieslive/portal-finance-default"
+      },
+      "features": ["fee-management", "invoicing", "payment-gateways", "reports"],
+      "dependencies": ["@shared/components",],
+      "shadcnComponents": ["button", "card", "table", "badge", "chart"]
+    },
+    "admission": {
+      "description": "Admission Portal - Application forms, document upload, status tracking",
+      "version": "1.3.0",
+      "author": "Z1LMS Team",
+      "compatibility": {
+        "node": ">=18.0.0",
+        "nextjs": "^14.0.0",
+        "@shared": "^1.0.0"
+      },
+      "themes": {
+        "default": "z1technologieslive/portal-admission-default",
+        "modern": "z1technologieslive/portal-admission-modern"
+      },
+      "features": ["application-forms", "document-upload", "status-tracking", "communications"],
+      "dependencies": ["@shared/components", ],
+      "shadcnComponents": ["button", "form", "stepper", "upload", "alert"]
+    }
+  },
+}
