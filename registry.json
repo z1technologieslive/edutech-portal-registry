@@ -34,7 +34,7 @@
         "default": "z1technologieslive/portal-finance-default"
       },
       "features": ["fee-management", "invoicing", "payment-gateways", "reports"],
-      "dependencies": ["@shared/components",],
+      "dependencies": ["@shared/components"],
       "shadcnComponents": ["button", "card", "table", "badge", "chart"]
     },
     "admission": {
@@ -51,8 +51,8 @@
         "modern": "z1technologieslive/portal-admission-modern"
       },
       "features": ["application-forms", "document-upload", "status-tracking", "communications"],
-      "dependencies": ["@shared/components", ],
+      "dependencies": ["@shared/components"],
       "shadcnComponents": ["button", "form", "stepper", "upload", "alert"]
     }
-  },
+  }
 }
